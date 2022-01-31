@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -9,7 +10,8 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: rgba(175, 195, 255, 0.808);
-    .about{
+    font-family: 'Roboto', sans-serif;
+    .wrapper-about{
         height: 93%;
         width: 52%;
         position: absolute;
@@ -19,31 +21,48 @@ body{
         display: flex;
         flex-wrap: wrap;
         background-color: #fff;
-        border-radius: 10px 0px 0px 0px; 
+        border-radius: 10px 10px 0px 0px; 
         box-shadow: -30px 0px 30px 20px #e7e7e7;
-        .test{
-            width: 50%;
-            h1{
-                // width: 40%;
-                margin-top: 5%;
-                margin-left: 10%;
-                color: black;
-                font-size: 1.8rem;
-            }
-            p{
-                padding: 10px;
-                line-height: 25px;
-                letter-spacing: 1px;
-                font-weight: bold;
-                color:#ffd900;
-                margin-left: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        overflow: hidden;
+        .title{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+        .imgs{
+            display: flex;
+            align-self: center;
+            img{
+                transform: rotate(-15deg) scale(2.5);
+                width: 100%;
             }
         }
-        img{
-            width: 50%;
-            height: 220px;
-            margin-top: 10%;
-            border-radius: 50%;
+        .about{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            p{
+                width: 80%;
+                font-size: 1.1rem;
+                line-height: 30px;
+            }
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .test{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 170px;
+            left: 400px;
+            background: radial-gradient(#e66465, #fff);
         }
     }
     .skills{
@@ -53,6 +72,6 @@ body{
         top: 0;
         left: 1%;
         z-index: 1;       
-        background-color: #fff;
+        background-color: rgb(243, 243, 243);
     }
 }
