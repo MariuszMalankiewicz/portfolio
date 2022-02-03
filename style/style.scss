@@ -95,36 +95,32 @@ body{
         .technology{
             height: 50px;
             width: 80%;
-            // display: grid;
-            // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            // grid-template-rows: 1fr;
             display: flex;
             text-align: center;
             align-items: center;
             margin-left: 5%;
             background-color: gray;
-            overflow: hidden;
             div{
                 height: 100%;
-                width: 25%;
+                width: 100%;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-around;
                 color: #fff;
                 font-weight: bold;
                 font-size: 1.1rem;
+                p{
+                    color: #fff;
+                    font-weight: bold;
+                }
+                i{
+                    color: #fff;
+                    transform: scale(4);
+                }
+                p:nth-of-type(1){
+                }
             }
-            .fas{
-                width: 0;
-                color: #fff;
-                transform: scale(5);
-            }
-            div:nth-of-type(1){
-                background-color: rgb(70, 70, 165);
-            }
-            div:nth-of-type(2){
-                background-color: rgb(228, 196, 15);
-            }
+
         }
 
 
