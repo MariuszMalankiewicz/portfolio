@@ -7,16 +7,16 @@
 
 body {
   position: relative;
-  height: 100vh;
+  height: auto;
   width: 100vw;
   background-color: rgba(128, 0, 128, 0.9);
   font-family: "Roboto", sans-serif;
 }
 body .wrapper-about {
-  height: 90%;
+  height: auto;
   width: 50%;
   position: absolute;
-  top: 10%;
+  top: 50px;
   left: 42%;
   z-index: 2;
   display: flex;
@@ -25,11 +25,10 @@ body .wrapper-about {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  overflow-y: scroll;
-  box-shadow: -30px 30px 5px 0px #bebdbd;
+  box-shadow: -30px 30px 5px 0px #d8d8d8;
 }
 body .wrapper-about .title {
-  height: 30%;
+  height: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -39,16 +38,8 @@ body .wrapper-about .title {
 body .wrapper-about .title h1 {
   color: white;
 }
-body .wrapper-about .imgs {
-  display: flex;
-  align-self: center;
-}
-body .wrapper-about .imgs img {
-  transform: rotate(-15deg) scale(1);
-  width: 100%;
-}
 body .wrapper-about .about {
-  height: 40%;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +51,7 @@ body .wrapper-about .about p {
 }
 body .wrapper-about .contact {
   width: 100%;
-  height: 30%;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,11 +60,11 @@ body .wrapper-about .contact {
   color: #fff;
 }
 body .skills {
-  height: 100%;
+  height: auto;
   width: 45%;
   position: absolute;
   top: 0;
-  left: 2%;
+  left: 50px;
   z-index: 0;
   background-color: #fff;
   display: flex;
@@ -82,11 +73,9 @@ body .skills {
   flex-wrap: wrap;
 }
 body .skills .title_skills {
-  width: 100%;
-  height: 20%;
+  height: 300px;
   display: flex;
-  justify-content: center;
-  align-self: center;
+  align-items: center;
 }
 body .skills .title_skills h1 {
   color: #800080;
@@ -95,6 +84,7 @@ body .skills .title_skills h1 {
 body .skills .technology {
   height: auto;
   width: 80%;
+  margin-bottom: 30px;
 }
 body .skills .technology div:nth-of-type(1) {
   width: 100%;
@@ -119,6 +109,29 @@ body .skills .technology div:nth-of-type(2) {
 body .skills .technology div:nth-of-type(2) span {
   display: block;
   height: 100%;
-  width: 50%;
   background-color: #800080;
+}
+body .skills .technology div:nth-of-type(2) .mid {
+  width: 50%;
+}
+body .skills .technology div:nth-of-type(2) .junior {
+  width: 25%;
+}
+body .skills .technology div:nth-of-type(2) .trainee {
+  width: 5%;
+}
+body .skills .project {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .skills .project button {
+  background-color: #800080;
+  width: 30%;
+  height: 50px;
+}
+body .skills .project button a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
