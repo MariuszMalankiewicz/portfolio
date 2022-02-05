@@ -6,64 +6,17 @@
     margin: 0;
 }
 body{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     width: 100vw;
     background-color: rgba(128, 0, 128, .9);
-    font-family: 'Roboto', sans-serif;
-    .wrapper-about{
-        height: auto;
-        width: 50%;
-        position: absolute;
-        top: 50px;
-        left: 42%;
-        z-index: 2;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: #fff;
-        box-shadow: -30px 30px 5px 0px #d8d8d8;
-        .title{
-            height: 200px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            background-color:#800080;
-            h1{
-                color: white;
-            }
-        }
-        .about{
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            p{
-                width: 60%;
-                font-size: 1.1rem;
-                line-height: 30px;
-            }
-        }
-        .contact{
-            width: 100%;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: purple;
-            color: #fff;
-        }
-    }
+    // font-family: 'Roboto', sans-serif;
+
     .skills{
         height: auto;
         width: 45%;
-        position: absolute;
-        top: 0;
-        left: 50px;
         z-index: 0;       
         background-color: #fff;
         display: flex;
@@ -82,7 +35,7 @@ body{
         .technology{
             height: auto;
             width: 80%;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             div:nth-of-type(1){
                 width: 100%;
                 display: flex;
@@ -90,6 +43,7 @@ body{
                 justify-content: space-between;
                 p{
                     font-weight: bold;
+                    margin-bottom: 5px;
                 }
                 p:nth-of-type(1){
                     margin-left: 10px;
@@ -128,11 +82,73 @@ body{
                 background-color: #800080;
                 width: 30%;
                 height: 50px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: -5px -5px 5px 0px #c5c3c3;
                 a{
+                    font-size: 1.1rem;
                     color: #fff;
+                    font-weight: bold;
+                    text-decoration: none;
                 }
             }
         }
 
+    }
+    
+    .wrapper-about{
+        height: auto;
+        width: 50%;
+        margin-top: 50px;
+        margin-right: 50px;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: -30px 30px 5px 0px #d8d8d8;
+        .title{
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-color:#800080;
+            h1{
+                color: white;
+            }
+        }
+        .about{
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                width: 60%;
+                font-size: 1.1rem;
+                line-height: 30px;
+                font-weight: 700;
+            }
+        }
+        .contact{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: purple;
+            color: #fff;
+            h1{
+                margin-bottom: 10px;
+            }
+            p{
+                line-height: 30px;
+                font-weight: 700;
+            }
+        }
     }
 }

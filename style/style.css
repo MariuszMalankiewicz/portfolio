@@ -6,65 +6,16 @@
 }
 
 body {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: auto;
   width: 100vw;
   background-color: rgba(128, 0, 128, 0.9);
-  font-family: "Roboto", sans-serif;
-}
-body .wrapper-about {
-  height: auto;
-  width: 50%;
-  position: absolute;
-  top: 50px;
-  left: 42%;
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  box-shadow: -30px 30px 5px 0px #d8d8d8;
-}
-body .wrapper-about .title {
-  height: 200px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-color: #800080;
-}
-body .wrapper-about .title h1 {
-  color: white;
-}
-body .wrapper-about .about {
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .wrapper-about .about p {
-  width: 60%;
-  font-size: 1.1rem;
-  line-height: 30px;
-}
-body .wrapper-about .contact {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: purple;
-  color: #fff;
 }
 body .skills {
   height: auto;
   width: 45%;
-  position: absolute;
-  top: 0;
-  left: 50px;
   z-index: 0;
   background-color: #fff;
   display: flex;
@@ -84,7 +35,7 @@ body .skills .title_skills h1 {
 body .skills .technology {
   height: auto;
   width: 80%;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 body .skills .technology div:nth-of-type(1) {
   width: 100%;
@@ -94,6 +45,7 @@ body .skills .technology div:nth-of-type(1) {
 }
 body .skills .technology div:nth-of-type(1) p {
   font-weight: bold;
+  margin-bottom: 5px;
 }
 body .skills .technology div:nth-of-type(1) p:nth-of-type(1) {
   margin-left: 10px;
@@ -131,7 +83,68 @@ body .skills .project button {
   background-color: #800080;
   width: 30%;
   height: 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: -5px -5px 5px 0px #c5c3c3;
 }
 body .skills .project button a {
+  font-size: 1.1rem;
   color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+body .wrapper-about {
+  height: auto;
+  width: 50%;
+  margin-top: 50px;
+  margin-right: 50px;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: -30px 30px 5px 0px #d8d8d8;
+}
+body .wrapper-about .title {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #800080;
+}
+body .wrapper-about .title h1 {
+  color: white;
+}
+body .wrapper-about .about {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .wrapper-about .about p {
+  width: 60%;
+  font-size: 1.1rem;
+  line-height: 30px;
+  font-weight: 700;
+}
+body .wrapper-about .contact {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  color: #fff;
+}
+body .wrapper-about .contact h1 {
+  margin-bottom: 10px;
+}
+body .wrapper-about .contact p {
+  line-height: 30px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
