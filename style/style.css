@@ -8,155 +8,184 @@
 body {
   height: auto;
   width: 100vw;
-  position: relative;
-  background-color: rgba(128, 0, 128, 0.9);
-  font-family: "Roboto", sans-serif;
+  background-color: transparent;
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
-body .wrapper-about {
-  position: absolute;
-  top: 100px;
-  right: 100px;
-  width: 55%;
-  z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  box-shadow: -100px 50px 100px 0px rgba(0, 0, 0, 0.11);
-}
-body .wrapper-about .name {
+body .name {
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   color: #fff;
   font-size: 3rem;
+  line-height: 80px;
   background-color: purple;
 }
-body .wrapper-about svg {
+body .up {
   width: 100%;
 }
-body .wrapper-about .about_content {
-  width: 100%;
-  height: 600px;
+body .fa-angle-down {
+  margin-top: -100px;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #800080;
+  font-size: 6rem;
+}
+body .about_content {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-body .wrapper-about .about_content h2 {
+body .about_content h2 {
   color: #800080;
-  margin-top: 50px;
   font-size: 2rem;
 }
-body .wrapper-about .about_content p {
-  width: 60%;
+body .about_content p {
+  width: 40%;
   margin-top: 50px;
   line-height: 40px;
   letter-spacing: 0.3px;
 }
-body .wrapper_skills {
-  position: relative;
+body .programming_language {
   height: auto;
-  width: 55%;
-  z-index: 0;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  transition: all 0.3s linear;
-}
-body .wrapper_skills:hover {
-  box-shadow: 100px 0px 100px 0px rgba(0, 0, 0, 0.459);
-  z-index: 2;
-}
-body .wrapper_skills h1 {
-  height: 400px;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .programming_language h2 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #800080;
 }
-body .wrapper_skills .technology {
-  width: 80%;
+body .programming_language .technology {
+  width: 60%;
   margin-bottom: 25px;
 }
-body .wrapper_skills .technology div:nth-of-type(1) {
+body .programming_language .technology div:nth-of-type(1) {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body .wrapper_skills .technology div:nth-of-type(1) p {
+body .programming_language .technology div:nth-of-type(1) p {
   font-weight: bold;
   margin-bottom: 5px;
 }
-body .wrapper_skills .technology div:nth-of-type(1) p:nth-of-type(1) {
+body .programming_language .technology div:nth-of-type(1) p:nth-of-type(1) {
   margin-left: 10px;
 }
-body .wrapper_skills .technology div:nth-of-type(1) p:nth-of-type(2) {
+body .programming_language .technology div:nth-of-type(1) p:nth-of-type(2) {
   margin-right: 10px;
 }
-body .wrapper_skills .technology div:nth-of-type(2) {
+body .programming_language .technology div:nth-of-type(2) {
   height: 10px;
   width: 100%;
   background-color: lightgray;
 }
-body .wrapper_skills .technology div:nth-of-type(2) span {
+body .programming_language .technology div:nth-of-type(2) span {
   display: block;
   height: 100%;
   background-color: #800080;
 }
-body .wrapper_skills .technology div:nth-of-type(2) .mid {
+body .programming_language .technology div:nth-of-type(2) .mid {
   width: 50%;
 }
-body .wrapper_skills .technology div:nth-of-type(2) .junior {
+body .programming_language .technology div:nth-of-type(2) .junior {
   width: 25%;
 }
-body .wrapper_skills .technology div:nth-of-type(2) .trainee {
+body .programming_language .technology div:nth-of-type(2) .trainee {
   width: 5%;
 }
-body .wrapper_skills .certificates {
-  height: 500px;
+body .tools {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .tools h2 {
+  height: 40px;
+  color: #800080;
+}
+body .tools p {
+  line-height: 30px;
+}
+body .system {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .system h2 {
+  height: 50px;
+  color: #800080;
+}
+body .language {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .language h2 {
+  height: 40px;
+  color: #800080;
+}
+body .language p {
+  line-height: 30px;
+}
+body .certificates {
+  height: 250px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-body .wrapper_skills .certificates h2 {
+body .certificates h2 {
   color: #800080;
   font-size: 2rem;
   margin-bottom: 30px;
 }
-body .wrapper_skills .certificates p {
+body .certificates p {
   line-height: 40px;
 }
+body .down {
+  margin-bottom: -5px;
+  width: 100%;
+}
 body .wrapper_project {
-  width: 70%;
-  position: absolute;
+  width: 100%;
   top: 1150px;
   left: 20%;
-  background-color: #fff;
-  transition: box-shadow 0.3s linear;
-}
-body .wrapper_project:hover {
-  z-index: 3;
-  box-shadow: -50px -50px 100px 0px rgba(0, 0, 0, 0.137);
+  background-color: #800080;
 }
 body .wrapper_project h1 {
-  height: 300px;
+  height: 400px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #800080;
+  color: #fff;
+  background-color: #800080;
   font-size: 3rem;
 }
 body .wrapper_project .project {
@@ -172,24 +201,24 @@ body .wrapper_project .project img {
   width: 45%;
   margin: 20px;
 }
-
-@media (max-Width: 1024px) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: transparent;
-  }
-  body .wrapper-about {
-    position: relative;
-    width: 100%;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    box-shadow: none;
-  }
-  body .skills {
-    width: 100%;
-  }
+body .contact {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .contact h2 {
+  font-size: 2rem;
+  color: #800080;
+  margin-bottom: 30px;
+}
+body .contact p {
+  line-height: 30px;
+}
+body .contact .fa-brands,
+body .contact .fa-solid {
+  color: #800080;
+  font-size: 1.4rem;
 }/*# sourceMappingURL=style.css.map */
