@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,6 +12,31 @@ body {
   background-color: transparent;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
+}
+body nav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #800080;
+}
+body nav ul {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body nav ul i {
+  transform: scale(1.5);
+  color: #fff;
+}
+body nav ul a {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
 }
 body .name {
   width: 100%;
@@ -44,7 +70,7 @@ body .about_content {
 }
 body .about_content h2 {
   color: #800080;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 body .about_content p {
   width: 40%;
@@ -61,6 +87,7 @@ body .programming_language {
   flex-wrap: wrap;
 }
 body .programming_language h2 {
+  font-size: 2.2rem;
   width: 100%;
   height: 200px;
   display: flex;
@@ -173,9 +200,13 @@ body .down {
   width: 100%;
 }
 body .wrapper_project {
-  width: 100%;
+  width: 90%;
   top: 1150px;
   left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   background-color: #800080;
 }
 body .wrapper_project h1 {
@@ -189,17 +220,42 @@ body .wrapper_project h1 {
   font-size: 3rem;
 }
 body .wrapper_project .project {
-  width: 100%;
+  width: 40%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+body .wrapper_project .project .info {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+body .wrapper_project .project .info h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .wrapper_project .project .info p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+body .wrapper_project .project .info button {
+  height: 20px;
+  width: 100px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  background-color: deeppink;
+  cursor: pointer;
 }
 body .wrapper_project .project img {
-  width: 45%;
-  margin: 20px;
+  width: 80%;
 }
 body .contact {
   height: 600px;
@@ -210,15 +266,22 @@ body .contact {
   flex-direction: column;
 }
 body .contact h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #800080;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
-body .contact p {
-  line-height: 30px;
+body .contact ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
-body .contact .fa-brands,
-body .contact .fa-solid {
+body .contact ul i {
   color: #800080;
-  font-size: 1.4rem;
+}
+body .contact ul li {
+  font-weight: bold;
+  list-style: none;
+  margin-left: 10px;
+  color: #800080;
 }/*# sourceMappingURL=style.css.map */
