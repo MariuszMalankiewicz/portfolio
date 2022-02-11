@@ -14,15 +14,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 body nav {
-  height: 100%;
-  width: 15%;
+  height: 80px;
+  width: 100%;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
   background-color: #800080;
 }
+body nav .fa-bars {
+  display: none;
+}
 body nav ul {
-  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,7 +205,7 @@ body .down {
   width: 100%;
 }
 body .wrapper_project {
-  width: 90%;
+  width: 100%;
   top: 1150px;
   left: 20%;
   display: flex;
@@ -220,14 +225,21 @@ body .wrapper_project h1 {
   font-size: 3rem;
 }
 body .wrapper_project .project {
+  height: 300px;
   width: 40%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
 }
-body .wrapper_project .project .info {
+body .wrapper_project img {
+  width: 100%;
+}
+body .wrapper_project .info {
   width: 80%;
   display: flex;
   justify-content: center;
@@ -235,16 +247,17 @@ body .wrapper_project .project .info {
   flex-direction: column;
   background-color: #fff;
 }
-body .wrapper_project .project .info h3 {
+body .wrapper_project .info h3 {
   font-size: 1.8rem;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  color: #800080;
 }
-body .wrapper_project .project .info p {
+body .wrapper_project .info p {
   margin-bottom: 10px;
   font-weight: bold;
 }
-body .wrapper_project .project .info button {
+body .wrapper_project .info button {
   height: 20px;
   width: 100px;
   margin-bottom: 10px;
@@ -253,9 +266,6 @@ body .wrapper_project .project .info button {
   color: #fff;
   background-color: deeppink;
   cursor: pointer;
-}
-body .wrapper_project .project img {
-  width: 80%;
 }
 body .contact {
   height: 600px;
@@ -284,4 +294,29 @@ body .contact ul li {
   list-style: none;
   margin-left: 10px;
   color: #800080;
+}
+
+@media (max-width: 768px) {
+  body nav .fa-bars {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75%;
+    transform: scale(2);
+  }
+  body nav ul {
+    display: none;
+  }
+  body .active {
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+  }
+  body .ul_active {
+    display: flex;
+  }
+  body .wrapper_project .project {
+    width: 70%;
+  }
 }/*# sourceMappingURL=style.css.map */
