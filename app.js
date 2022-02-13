@@ -1,21 +1,19 @@
-// const menuBar = document.querySelector(".fa-bars");
-// const nav = document.querySelector("nav");
-// const active = document.querySelector("active");
-// const ul = document.querySelectorAll('nav ul');
-// const ul_active = document.querySelector('.ul_active');
-// const body = document.querySelector('body');
+const btn_open_menu = document.querySelector('.open_menu');
+const navigation = document.querySelector('nav');
+const body = document.querySelector('body');
 
+const btn_close_menu = document.querySelector('.close_menu');
+function menuOpen(){
+    navigation.style.left = "70%";
+    body.style.width = "70vw";
+    // for(let i = 0; i < ul.length; i++){
+        // ul[i].classList.toggle('ul_active');
+    // }
+}
+function menuClose(){
+    navigation.style.left = "100%";
+    body.style.width = "100vw"; 
+}
 
-
-
-// function menuOpen(){
-//     nav.classList.toggle('active');
-//     body.classList.style.transform ="translateX(50%)";
-//     for(let i = 0; i < ul.length; i++){
-//         ul[i].classList.toggle('ul_active');
-
-//     }
-// }
-
-
-// menuBar.addEventListener('click', menuOpen);
+btn_open_menu.addEventListener('click', menuOpen);
+btn_close_menu.addEventListener('click', menuClose);

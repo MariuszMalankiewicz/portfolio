@@ -12,6 +12,7 @@ body{
     background-color: transparent;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+    transition: .5s linear;
     .open_menu{
         width: 100px;
         height: 80px;
@@ -23,6 +24,7 @@ body{
         justify-content: center;
         border-radius: 0px 0px 0 20px;
         background-color: rgb(255, 241, 49);
+        cursor: pointer;
         .fa-arrow-left{
             color: purple;
             margin-top: 10px;
@@ -47,8 +49,28 @@ body{
         flex-direction: column;
         background-color: #800080;
         transition: .5s linear;
-        .fa-bars{
-            display: none;
+        .close_menu{
+            height: 50px;
+            width: 100px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 241, 49);
+            border-radius: 0px 20px 20px 0px;
+            cursor: pointer;
+            p{
+                color: purple;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+            .fa-arrow-right{
+                color: purple;
+                margin-left: 10px;
+                font-size: 1.4rem;
+            }
         }
         ul{
             display: flex;

@@ -12,6 +12,7 @@ body {
   background-color: transparent;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
+  transition: 0.5s linear;
 }
 body .open_menu {
   width: 100px;
@@ -24,6 +25,7 @@ body .open_menu {
   justify-content: center;
   border-radius: 0px 0px 0 20px;
   background-color: #fff131;
+  cursor: pointer;
 }
 body .open_menu .fa-arrow-left {
   color: purple;
@@ -49,8 +51,28 @@ body nav {
   background-color: #800080;
   transition: 0.5s linear;
 }
-body nav .fa-bars {
-  display: none;
+body nav .close_menu {
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff131;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+body nav .close_menu p {
+  color: purple;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+body nav .close_menu .fa-arrow-right {
+  color: purple;
+  margin-left: 10px;
+  font-size: 1.4rem;
 }
 body nav ul {
   display: flex;
