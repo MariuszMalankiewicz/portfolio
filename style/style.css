@@ -13,16 +13,41 @@ body {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
 }
-body nav {
+body .open_menu {
+  width: 100px;
   height: 80px;
-  width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 0 20px;
+  background-color: #fff131;
+}
+body .open_menu .fa-arrow-left {
+  color: purple;
+  margin-top: 10px;
+  margin-right: 10px;
+  transform: scale(1.5) rotate(-30deg);
+}
+body .open_menu p {
+  font-size: 1.2rem;
+  color: purple;
+  font-weight: bold;
+}
+body nav {
+  height: 100vh;
+  width: 30%;
+  position: fixed;
+  top: 0;
+  left: 100%;
   display: flex;
   justify-content: space-around;
   align-content: center;
+  flex-direction: column;
   background-color: #800080;
+  transition: 0.5s linear;
 }
 body nav .fa-bars {
   display: none;
@@ -294,29 +319,4 @@ body .contact ul li {
   list-style: none;
   margin-left: 10px;
   color: #800080;
-}
-
-@media (max-width: 768px) {
-  body nav .fa-bars {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 75%;
-    transform: scale(2);
-  }
-  body nav ul {
-    display: none;
-  }
-  body .active {
-    flex-direction: column;
-    width: 50vw;
-    height: 100vh;
-  }
-  body .ul_active {
-    display: flex;
-  }
-  body .wrapper_project .project {
-    width: 70%;
-  }
 }/*# sourceMappingURL=style.css.map */

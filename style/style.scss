@@ -12,16 +12,41 @@ body{
     background-color: transparent;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
-    nav{
+    .open_menu{
+        width: 100px;
         height: 80px;
-        width: 100%;
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 0px 0 20px;
+        background-color: rgb(255, 241, 49);
+        .fa-arrow-left{
+            color: purple;
+            margin-top: 10px;
+            margin-right: 10px;
+            transform: scale(1.5) rotate(-30deg);
+        }
+        p{
+            font-size: 1.2rem;
+            color: purple;
+            font-weight: bold;
+        }
+    }
+    nav{
+        height: 100vh;
+        width: 30%;
+        position: fixed;
+        top: 0;
+        left: 100%;
         display: flex;
         justify-content: space-around;
         align-content: center;
+        flex-direction: column;
         background-color: #800080;
+        transition: .5s linear;
         .fa-bars{
             display: none;
         }
@@ -298,33 +323,25 @@ body{
     }
 }
 
-@media (max-width: 768px) {
-    body{
-        nav{
-            .fa-bars{
-                color: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 75%;
-                transform: scale(2);
-            }
-            ul{
-                display: none;
-            }
-        }
-        .active{
-            flex-direction: column;
-            width: 50vw;
-            height: 100vh;
-        }
-        .ul_active{
-            display: flex;
-        }
-        .wrapper_project{
-            .project{
-                width: 70%;
-            }
-        }
-    }
-}
+// @media (max-width: 768px) {
+//     body{
+//         nav{
+//             .fa-bars{
+//                 color: #fff;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 margin-left: 75%;
+//                 transform: scale(2);
+//             }
+//             ul{
+//                 display: none;
+//             }
+//         }
+//         .wrapper_project{
+//             .project{
+//                 width: 70%;
+//             }
+//         }
+//     }
+// }
