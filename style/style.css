@@ -56,8 +56,7 @@ body nav .close_menu {
   width: 100px;
   position: absolute;
   top: 50%;
-  left: -50px;
-  z-index: 1;
+  left: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,6 +304,10 @@ body .wrapper_project .info button {
   background-color: deeppink;
   cursor: pointer;
 }
+body .wrapper_project .info button a {
+  color: #fff;
+  text-decoration: none;
+}
 body .contact {
   height: 600px;
   width: 100%;
@@ -331,6 +334,10 @@ body .contact ul li {
   font-weight: bold;
   list-style: none;
   margin-left: 10px;
+  color: #800080;
+}
+body .contact ul li a {
+  text-decoration: none;
   color: #800080;
 }
 

@@ -54,8 +54,7 @@ body{
             width: 100px;
             position: absolute;
             top: 50%;
-            left: -50px;
-            z-index: 1;
+            left: 0px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -302,6 +301,10 @@ body{
                     color: #fff;
                     background-color: deeppink;
                     cursor: pointer;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
                 }
 
         }
@@ -331,6 +334,10 @@ body{
                 list-style: none;
                 margin-left: 10px;
                 color: #800080;
+                a{
+                    text-decoration: none;
+                    color: #800080;
+                }
             }
         }
     }
