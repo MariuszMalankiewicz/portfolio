@@ -9,157 +9,165 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="open_menu">
-        <i class="fa-solid fa-arrow-left"></i>
-        <p>Open</p>
+    <!-- navigation -->
+    <div class="ellipsis-vertical">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
     </div>
     <nav>
-        <div class="close_menu">
-            <p>Close</p>
-            <i class="fa-solid fa-arrow-right"></i>
-        </div>
         <ul>
-            <i class="fa-solid fa-house"></i>
-            <a href="#home">Home</a>
-        </ul>
-        <ul>
-            <i class="fas fa-user"></i>
-            <a href="#about">About</a>
-        </ul>
-        <ul>
-            <i class="fa-solid fa-briefcase"></i>
-            <a href="#skills">Skills</a>
-        </ul>
-        <ul>
-            <i class="fa-solid fa-graduation-cap"></i>
-            <a href="#project">Project</a>
-        </ul>
-        <ul>
-            <i class="fa-solid fa-address-card"></i>
-            <a href="#contact">Contact</a>
+            <li><a href="#home" data-text="Home">Home</a></li>
+            <li><a href="#about" data-text="About">About</a></li>
+            <li><a href="#skills" data-text="Skills">Skills</a></li>
+            <li><a href="#project" data-text="Project">Project</a></li>
+            <li><a href="#contact" data-text="Contact">Contact</a></li>
         </ul>
     </nav>
-    <h1 id="home" class="name">Hi! I'am <br> Mariusz Malankiewicz</h1>
-    <svg class="up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#800080" fill-opacity="1" d="M0,160L480,128L960,192L1440,32L1440,0L960,0L480,0L0,0Z"></path></svg>
-    <div class="about_content">
-        <h2 id="about">About Me</h2>
-        <p>Programming is my passion, which I have been promoting for over a year. I want to gain experience, professional development of my first job as a programmer. He wants to improve in this direction and expand the range of his skills. I am a person who wants to apply for a place in the position.</p>
+    <div class="wrapper-all">
+        <!-- Home Section -->
+        <header class="home">
+            <h1 id="home">Hi! I'am <br> Mariusz Malankiewicz</h1>
+        </header>
+        <div class="waveup">
+            <svg id="about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#800080" fill-opacity="1" d="M0,160L480,128L960,192L1440,32L1440,0L960,0L480,0L0,0Z"></path></svg>
+        </div>
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Programming is my passion, which I have been promoting for over a year. I want to gain experience, professional development of my first job as a programmer. He wants to improve in this direction and expand the range of his skills. I am a person who wants to apply for a place in the position.</p>
+        </section>
+        <!-- Skill Section -->
+        <section class="skills">
+            <h2 id="skills">Programming Language</h2>
+            <div class="wrapProgresBars">
+                <div class="name-lvl">
+                    <p class="name">Html</p>
+                    <p class="lvl">Middle</p>
+                </div>
+                <div class="progresBar">
+                    <span class="mid"></span>
+                </div>
+            </div>
+            <div class="wrapProgresBars">
+                <div class="name-lvl">
+                    <p class="name">Css</p>
+                    <p class="lvl">Middle</p>
+                </div>
+                <div class="progresBar">
+                    <span class="mid"></span>
+                </div>
+            </div>
+            <div class="wrapProgresBars">
+                <div class="name-lvl">
+                    <p class="name">Sass</p>
+                    <p class="lvl">Middle</p>
+                </div>
+                <div class="progresBar">
+                    <span class="mid"></span>
+                </div>
+            </div>
+            <div class="wrapProgresBars">
+                <div class="name-lvl">
+                    <p class="name">Bootstrap</p>
+                    <p class="lvl">Junior</p>
+                </div>
+                <div class="progresBar">
+                    <span class="junior"></span>
+                </div>
+            </div>
+            <div class="wrapProgresBars">
+                <div class="name-lvl">
+                    <p class="name">Java Script</p>
+                    <p class="lvl">Junior</p>
+                </div>
+                <div class="progresBar">
+                    <span class="junior"></span>
+                </div>
+            </div>
+            <div class="wrapProgresBars">
+                <div class="name-lvl">
+                    <p class="name">Php</p>
+                    <p class="lvl">Junior</p>
+                </div>
+                <div class="progresBar">
+                    <span class="junior"></span>
+                </div>
+            </div>
+            <div class="wrapProgresBars">
+                <div class="name-lvl">
+                    <p class="name">MySqli</p>
+                    <p class="lvl">Junior</p>
+                </div>
+                <div class="progresBar">
+                    <span class="junior"></span>
+                </div>
+            </div>
+        </section>
+        <!-- Informaiton Section -->
+        <section class="information">
+            <div class="tools">
+                <h2>Tools</h2>
+                <p>Visual Studio Code</p>
+                <p>Git</p>
+                <p>Github</p>
+            </div>
+            <div class="system">
+                <h2>System</h2>
+                <p>Windows</p>
+            </div>
+            <div class="language">
+                <h2>Language</h2>
+                <p>Polish</p>
+                <p>English</p>
+            </div>
+            <div class="certificates">
+                <h2>Certificates</h2>
+                <p>Web developer from scratch in 15 days</p>
+                <p>Front-end advanced in 15 days</p>
+                <p>Programming in JavaScript</p>
+            </div>
+        </section>
+        <!-- WAVE DOWN -->
+        <div class="down">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#800080" fill-opacity="1" d="M0,96L288,128L576,128L864,256L1152,128L1440,96L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
+        </div>
+        <!-- Project Section -->
+        <section class="project">
+            <h1 id="project">Project</h1>
+            <div class="slider">
+                <img src="imgs/todolist.png" alt="todolist">
+                <h2>To do list</h2>
+                <span>#01</span>
+                <button><a href="https://mariuszmalankiewicz.github.io/To-Do-List/">View project</a></button>
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-play seeMode"></i>
+                <i class="fa-solid fa-pause"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </section>
+        <!-- wave -->
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#800080" fill-opacity="1" d="M0,160L288,224L576,320L864,160L1152,224L1440,96L1440,0L1152,0L864,0L576,0L288,0L0,0Z"></path></svg>
+        </div>
+        <!-- contact section -->
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <ul>
+            <li><i class="fa-solid fa-envelope"></i><a href="https://www.wp.pl/">Email: m2ario123@wp.pl</a></li>
+            <li><i class="fa-solid fa-location-dot"></i>Location: Poland</li>
+            <li><i class="fa-brands fa-github"></i><a href="https://github.com/MariuszMalankiewicz">Github</a></li>
+            <li><i class="fa-brands fa-linkedin"></i>LinkedIn</li>
+            </ul>
+        </section>
+        <div class="down">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#800080" fill-opacity="1" d="M0,96L288,128L576,128L864,256L1152,128L1440,96L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
+        </div>
+        <footer>
+            <p>Copyright by Mariusz Malankiewicz</p>
+        </footer>
     </div>
-    <div class="programming_language">
-        <h2 id="skills">Programming Language</h2>
-        <div class="technology">
-            <div>
-                <p>Html</p>
-                <p>Middle</p>
-            </div>
-            <div><span class="mid"></span></div>
-        </div>
-        <div class="technology">
-            <div>
-                <p>Css</p>
-                <p>Middle</p>
-            </div>
-            <div><span class="mid"></span></div>
-        </div>
-        <div class="technology">
-            <div>
-                <p>Sass</p>
-                <p>Middle</p>
-            </div>
-            <div><span class="mid"></span></div>
-        </div>
-        <div class="technology">
-            <div>
-                <p>Bootstrap</p>
-                <p>Junior</p>
-            </div>
-            <div><span class="junior"></span></div>
-        </div>
-        <div class="technology">
-            <div>
-                <p>Java Script</p>
-                <p>Junior</p>
-            </div>
-            <div><span class="junior"></span></div>
-        </div>
-        <div class="technology">
-            <div>
-                <p>Php</p>
-                <p>Junior</p>
-            </div>
-            <div><span class="junior"></span></div>
-        </div>
-        <div class="technology">
-            <div>
-                <p>Msqli</p>
-                <p>Junior</p>
-            </div>
-            <div><span class="junior"></span></div>
-        </div>
-    </div>
-    <div class="tools">
-        <h2>Tools</h2>
-        <p>Visual Studio Code</p>
-        <p>Git</p>
-        <p>Github</p>
-    </div>
-    <div class="system">
-        <h2>System</h2>
-        <p>Windows</p>
-    </div>
-    <div class="language">
-        <h2>Language</h2>
-        <p>Polish</p>
-        <p>English</p>
-    </div>
-    <div class="certificates">
-        <h2>Certificates</h2>
-        <p>Web developer from scratch in 15 days</p>
-        <p>Front-end advanced in 15 days</p>
-        <p>Programming in JavaScript</p>
-    </div>
-    <svg class="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#800080" fill-opacity="1" d="M0,96L288,128L576,128L864,256L1152,128L1440,96L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
-    <div class="wrapper_project">
-        <h1 id="project">Project</h1>
-        <div class="project">
-            <img src="imgs/todolist.png" alt="todolist">
-            <div class="info">
-                <h3>To Do List</h3>
-                <p>Html, Css, Js</p>
-                <button><a href="https://mariuszmalankiewicz.github.io/To-Do-List/">Open</a></button>
-                <button><a href="https://github.com/MariuszMalankiewicz/To-Do-List">Github</a></button>
-            </div>
-        </div>
-        <div class="project">
-            <img src="imgs/login_accont.png" alt="account system">
-            <div class="info">
-                <h3>Account System</h3>
-                <p>Html, Css, Php, Mysqli</p>
-                <button><a href="https://github.com/MariuszMalankiewicz/tworzeniekonta">Open</a></button>
-                <button><a href="https://github.com/MariuszMalankiewicz/tworzeniekonta">Github</a></button>
-            </div>
-        </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#800080" fill-opacity="1" d="M0,160L288,224L576,320L864,160L1152,224L1440,96L1440,0L1152,0L864,0L576,0L288,0L0,0Z"></path></svg>
-    <div id="contact" class="contact">
-        <h2>Contact</h2>
-        <ul>
-            <i class="fa-solid fa-envelope"></i>
-            <li><a href="https://www.wp.pl/">Email: m2ario123@wp.pl</a></li>
-        </ul>
-        <ul>
-            <i class="fa-solid fa-location-dot"></i>
-            <li>Location: Poland</li>
-        </ul>
-        <ul>
-            <i class="fa-brands fa-github"></i>
-            <li><a href="https://github.com/MariuszMalankiewicz">Github</a></li>
-        </ul>
-        <ul>
-            <i class="fa-brands fa-linkedin"></i>
-            <li>LinkedIn</li>
-        </ul>
-    </div>
-    <script src="app.js"></script>
+
+    <script src="nav.js"></script>
+    <script src="skillsanimation.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>
